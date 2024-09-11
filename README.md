@@ -15,18 +15,18 @@ This repository contains Terraform configurations designed to manage multiple en
 - [Terraform](https://www.terraform.io/downloads.html) 
 - [AWS CLI](https://aws.amazon.com/cli/) configured with appropriate credentials in `~/.aws/credentials`
 - [Git](https://git-scm.com/)
-- [Bash] - Native support for macOS and Linux. For Windows users, you can use [Git Bash](https://gitforwindows.org/).
+- Bash - Native support for macOS and Linux. For Windows users, you can use [Git Bash](https://gitforwindows.org/).
 
 ## Setup for a quick test
 
-1. *Update AWS Credentials:* Ensure your local `~/.aws/credentials` file is updated with the correct AWS profile name.
-2. *Clone the Repository:* Make a copy of this repository to your local environment.
-3. *Choose Backend State:* Decide whether to use a local or remote AWS S3 + DynamoDB backend state. Navigate to the corresponding folder (local or remote).
-4. *Update Configuration Files:*
-   - For remote backend, update both `variables.tf` and the `*.tfbackend` files.
+1. **Update AWS Credentials:** Ensure your local `~/.aws/credentials` file is updated with the correct AWS profile name.
+2. **Clone the Repository:** Make a copy of this repository to your local environment.
+3. **Choose Backend State:** Decide whether to use a local or remote AWS S3 + DynamoDB backend state. Navigate to the corresponding folder (local or remote).
+4. **Update Configuration Files:**
+   - For remote backend, update both `variables.tf` and the `**.tfbackend` files.
    - For local backend, only `variables.tf` needs to be updated.
 
-5. *Run Terraform:* Navigate to the appropriate Terraform folder based on your backend choice, then execute `./start.sh production` or `./start.sh stage` depending on the environment you want to test.
+5. **Run Terraform:** Navigate to the appropriate Terraform folder based on your backend choice, then execute `./start.sh production` or `./start.sh stage` depending on the environment you want to test.
 
 ## Quick tips
 
