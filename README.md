@@ -1,4 +1,4 @@
-# terraform-multienv
+# Terraform DRY Environment
 
 This repository contains Terraform configurations designed to manage multiple environments and/or accounts by leveraging a combination of native Terraform [workspaces](https://developer.hashicorp.com/terraform/language/state/workspaces) and [modules](https://developer.hashicorp.com/terraform/language/modules). The primary focus is to adhere to DRY (Don't Repeat Yourself) principles, eliminating redundancy and duplication of files and code between environments within the same account. By leveraging this approach, the repository provides a scalable, maintainable infrastructure-as-code solution without relying on external tools like Terragrunt.
 
